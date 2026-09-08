@@ -9,14 +9,14 @@ const charactersData = {
         {
             id: "camellya",
             name: "Camellya",
-            image: "../characters/camellya.png",
+            image: "./characters/camellya.png",
             description: "Camellya rotations."
         },
 
         {
             id: "yyxl",
             name: "Yangyang: Xuanling",
-            image: "../characters/yyxl.png",
+            image: "./characters/yyxl.png",
             description: "Yangyang: Xuanling rotations."
         }
 
@@ -27,21 +27,21 @@ const charactersData = {
         {
             id: "xly",
             name: "Xiangli Yao",
-            image: "../characters/xly.png",
+            image: "./characters/xly.png",
             description: "Xiangli Yao rotations."
         },
 
         {
             id: "augusta",
             name: "Augusta",
-            image: "../characters/augusta.png",
+            image: "./characters/augusta.png",
             description: "Augusta rotations."
         },
 
         {
             id: "rebecca",
             name: "Rebecca",
-            image: "../characters/rebecca.png",
+            image: "./characters/rebecca.png",
             description: "Rebecca rotations."
         }
 
@@ -52,28 +52,28 @@ const charactersData = {
         {
             id: "jiyan",
             name: "Jiyan",
-            image: "../characters/jiyan.png",
+            image: "./characters/jiyan.png",
             description: "Jiyan rotations."
         },
 
         {
             id: "cartethiya",
             name: "Cartethiya",
-            image: "../characters/cartethiya.png",
+            image: "./characters/cartethiya.png",
             description: "Cartethiya rotations."
         },
 
         {
             id: "sigrika",
             name: "Sigrika",
-            image: "../characters/sigrika.png",
+            image: "./characters/sigrika.png",
             description: "Sigrika rotations."
         },
 
         {
             id: "qingxiao",
             name: "Qingxiao",
-            image: "../characters/qingxiao.png",
+            image: "./characters/qingxiao.png",
             description: "Qingxiao rotations."
         }
 
@@ -84,14 +84,14 @@ const charactersData = {
         {
             id: "carlotta",
             name: "Carlotta",
-            image: "../characters/carlotta.png",
+            image: "./characters/carlotta.png",
             description: "Carlotta rotations."
         },
 
         {
             id: "hiyuki",
             name: "Hiyuki",
-            image: "../characters/hiyuki.png",
+            image: "./characters/hiyuki.png",
             description: "Hiyuki rotations."
         }
 
@@ -102,42 +102,42 @@ const charactersData = {
         {
             id: "changli",
             name: "Changli",
-            image: "../characters/changli.png",
+            image: "./characters/changli.png",
             description: "Changli rotations."
         },
 
         {
             id: "brant",
             name: "Brant",
-            image: "../characters/brant.png",
+            image: "./characters/brant.png",
             description: "Brant rotations."
         },
 
         {
             id: "lupa",
             name: "Lupa",
-            image: "../characters/lupa.png",
+            image: "./characters/lupa.png",
             description: "Lupa rotations."
         },
 
         {
             id: "galbrena",
             name: "Galbrena",
-            image: "../characters/galbrena.png",
+            image: "./characters/galbrena.png",
             description: "Galbrena rotations."
         },
 
         {
             id: "aemeath",
             name: "Aemeath",
-            image: "../characters/aemeath.png",
+            image: "./characters/aemeath.png",
             description: "Aemeath rotations."
         },
 
         {
             id: "jingran",
             name: "Jingran",
-            image: "../characters/jingran.png",
+            image: "./characters/jingran.png",
             description: "Jingran rotations."
         }
 
@@ -148,28 +148,28 @@ const charactersData = {
         {
             id: "jinhsi",
             name: "Jinhsi",
-            image: "../characters/jinshi.png",
+            image: "./characters/jinshi.png",
             description: "Jinhsi rotations."
         },
 
         {
             id: "zani",
             name: "Zani",
-            image: "../characters/zani.png",
+            image: "./characters/zani.png",
             description: "Zani rotations."
         },
 
         {
             id: "luuk",
             name: "Luuk",
-            image: "../characters/luuk.png",
+            image: "./characters/luuk.png",
             description: "Luuk rotations."
         },
 
         {
             id: "lucy",
             name: "Lucy",
-            image: "../characters/lucy.png",
+            image: "./characters/lucy.png",
             description: "Lucy rotations."
         }
 
@@ -220,17 +220,17 @@ const teams = {
 
                 {
                     name: "Camellya",
-                    image: "../characters/camellya.png"
+                    image: "./characters/camellya.png"
                 },
 
                 {
                     name: "Sanhua",
-                    image: "../characters/sanhua.png"
+                    image: "./characters/sanhua.png"
                 },
 
                 {
                     name: "Shorekeeper",
-                    image: "../characters/shorekeeper.png"
+                    image: "./characters/shorekeeper.png"
                 }
 
             ],
@@ -271,17 +271,17 @@ const teams = {
 
                 {
                     name: "Yangyang XL",
-                    image: "../characters/yyxl.png"
+                    image: "./characters/yyxl.png"
                 },
 
                 {
                     name: "Chisa",
-                    image: "../characters/chisa.png"
+                    image: "./characters/chisa.png"
                 },
 
                 {
                     name: "Suisui",
-                    image: "../characters/suisui.png"
+                    image: "./characters/suisui.png"
                 }
 
             ],
