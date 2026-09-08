@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/wuwa.css">
+
+    <title>Wuwa Rotations</title>
+
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+     NAVBAR
+========================= -->
+
+    <header>
+
+        <div class="navbar">
+
+            <!-- LEFT -->
+            <div class="navbar-left">
+                <a href="/index.html" class="home-button">
+                    Home
+                </a>
+            </div>
+
+
+            <!-- CENTER -->
+            <a href="./" class="nav-title">
+                Wuwa Rotations
+            </a>
+
+
+            <!-- RIGHT -->
+            <nav>
+
+                <!-- Notes -->
+                <div class="nav-item" id="notesItem">
+
+                    <button class="nav-button" id="notesButton">
+                        Notes
+                        <span class="arrow">▼</span>
+                    </button>
+
+                    <div class="dropdown" id="notesPanel">
+
+                        <div class="dropdown-title">
+                            Notes
+                        </div>
+
+                        <p>
+                            → Got a character, team, or rotation you want added?
+                        </p>
+
+                        <p>
+                            → Found a wrong rotation, missing info, or something outdated?
+                        </p>
+
+                        <p class="personal-note">
+                            I’m still working on this, so it might not be perfect.
+                            Any feedback or suggestions are appreciated! &lt;3
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Credits -->
+                <div class="nav-item" id="creditsItem">
+
+                    <button class="nav-button" id="creditsButton">
+                        Credits
+                        <span class="arrow">▼</span>
+                    </button>
+
+                    <div class="dropdown credit-box" id="creditsPanel">
+
+                        <div class="dropdown-title">
+                            Credits
+                        </div>
+
+                        <p class="credit-main">
+                            Made by <span>@iaani2077</span>
+                        </p>
+
+                        <p class="credit-sub">
+                            Further contributors will be added here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+     MAIN
+========================= -->
+
+    <main>
+
+        <h1>Select a Character</h1>
+
+        <div class="attribute-filters">
+
+            <button class="attribute-filter active" data-attribute="all">
+                All
+            </button>
+
+            <button class="attribute-filter" data-attribute="Havoc">
+                <img src="../images/attributes/havoc.png" alt="Havoc">
+                <span>Havoc</span>
+            </button>
+
+            <button class="attribute-filter" data-attribute="Electro">
+                <img src="../images/attributes/electro.png" alt="Electro">
+                <span>Electro</span>
+            </button>
+
+            <button class="attribute-filter" data-attribute="Aero">
+                <img src="../images/attributes/aero.png" alt="Aero">
+                <span>Aero</span>
+            </button>
+
+            <button class="attribute-filter" data-attribute="Glacio">
+                <img src="../images/attributes/glacio.png" alt="Glacio">
+                <span>Glacio</span>
+            </button>
+
+            <button class="attribute-filter" data-attribute="Fusion">
+                <img src="../images/attributes/fusion.png" alt="Fusion">
+                <span>Fusion</span>
+            </button>
+
+            <button class="attribute-filter" data-attribute="Spectro">
+                <img src="../images/attributes/spectro.png" alt="Spectro">
+                <span>Spectro</span>
+            </button>
+
+        </div>
+
+        <div class="characters"></div>
+
+
+        <!-- Character Content -->
+
+        <section id="character-content">
+
+            <details class="rotation-note">
+
+                <summary>
+                    How to Read
+                </summary>
+
+                <div class="rotation-instructions">
+
+                    <p>
+                        Action colors match the team member colors.
+                    </p>
+
+                    <p>
+                        Hover over an action to see who performs it.
+                    </p>
+
+                    <p>
+                        Follow the rotation from left → right.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+            <h2 id="character-name"></h2>
+
+            <p id="character-description"></p>
+
+            <div id="teams-container"></div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="../js/wuwa.js"></script>
+
+</body>
+
+</html>
