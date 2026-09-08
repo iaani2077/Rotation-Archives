@@ -146,10 +146,10 @@ const charactersData = {
     Spectro: [
 
         {
-            id: "jinhsi",
-            name: "Jinhsi",
+            id: "jinshi",
+            name: "Jinshi",
             image: "./characters/jinshi.png",
-            description: "Jinhsi rotations."
+            description: "Jinshi rotations."
         },
 
         {
