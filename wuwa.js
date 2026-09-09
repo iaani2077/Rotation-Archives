@@ -304,12 +304,15 @@ const teams = {
 
     ],
 
+
+// ***************************** HIYUKI *************************
+
     hiyuki: [
+
         {
-            name: "Team 1 - Basic 123",
+            name: "4 Lai",
 
             members: [
-
                 {
                     name: "Hiyuki",
                     image: "./characters/hiyuki.png"
@@ -324,25 +327,84 @@ const teams = {
                     name: "Suisui",
                     image: "./characters/suisui.png"
                 }
-
             ],
+
+            description: "Use this, atleast.",
+
+            rotation: [
+                "Hiyuki: Skill",
+                "Suisui: BA123, Skill, Skill, BA1234, Lib, Echo, Outro",
+                "Lucilla: Intro, Skill (Hold until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
+                "Hiyuki: BA123, Dash, BA123, Jump, Skill (Hold), 2 Lai (BA12), TB, BA, Dash, BA123, Jump Skill (Hold), 2 Lai (BAx2), HA, Lib, Echo, Outro"
+            ]
+        },
+
+        {
+            name: "3 Lai Quickswap < 25s",
+            members: [
+                {
+                    name: "Hiyuki",
+                    image: "./characters/hiyuki.png"
+                },
+                {
+                    name: "Lynae",
+                    image: "./characters/lynae.png"
+                },
+                {
+                    name: "Chisa",
+                    image: "./characters/chisa.png"
+                }
+            ],
+
+            description: "This is probably my fav rot. Its hella fun",
+
+            rotation: [
+                "Chisa: Skill, BA12",
+                "Lynae: Skill",
+                "Hiyuki: BA12, Dash",
+                "Chisa: BA",
+                "Lynae: Lib",
+                "Hiyuki: BA12, Skill",
+                "Chisa: BA, Lib, Skill(Enhanced)",
+                "Hiyuki: BA, HA, Lib, BA123",
+                "Chisa: BA12",
+                "Hiyuki: BA12, Skill",
+                "Chisa: BA, Outro",
+                "Lynae: BA (Hold untill Full Forte), Jump x 3, BA (Plunge), Outro",
+                "Hiyuki: BA12, Jump, Skill (Hold), 3 Lai (BA123), HA, Lib, Echo, Outro"
+            ]
+        },
+        {
+            name: "Basic 123",
+
+            members: [
+                {
+                    name: "Hiyuki",
+                    image: "./characters/hiyuki.png"
+                },
+
+                {
+                    name: "Lucilla",
+                    image: "./characters/lucilla.png"
+                },
+
+                {
+                    name: "Suisui",
+                    image: "./characters/suisui.png"
+                }
+            ],
+
             description:
-                "Honetly don't use this rot, its stupid",
+                "Honetly don't use this rot, its stupid.",
 
             rotation: [
 
                 "Hiyuki: Skill",
-
                 "Suisui: BA123, Skill, Skill, BA1234, Lib, Echo, Outro",
-
                 "Lucilla: Intro, Skill (Hold Until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
-
                 "Hiyuki: Intro, BA, HA, Lib, Skill x 2, Echo, BA12345, Dash, Skill x 3 (Lai), HA, Lib, Outro"
-
             ]
-
         }
-
     ]
 
 };
