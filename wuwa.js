@@ -260,6 +260,47 @@ const teams = {
 
     ],
 
+    hiyuki: [
+        {
+            name: "Team 1 - [4 Lai]",
+
+            member: [
+
+                {
+                    name: "Hiyuki",
+                    image: "./characters/hiyuki.png"
+                },
+
+                {
+                    name: "Lucilla",
+                    image: "./characters/lucilla.png"
+                },
+
+                {
+                    name: "Suisui",
+                    image: "./characters/suisui.png"
+                }
+
+            ],
+            description:
+                "*** placeholder ***",
+
+            rotation: [
+
+                "Hiyuki: Skill",
+
+                "Suisui: BA123, Skill, Skill, BA1234, Lib, Echo, Outro",
+
+                "Lucilla: Intro, Skill (Hold Until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
+
+                "Hiyuki: Intro, BA, HA, Lib, Skill x 2, Echo, BA12345, Dash, Skill x 3 (Lai), HA, Lib, Outro"
+
+            ]
+
+        }
+
+    ],
+
 
     yyxl: [
 
