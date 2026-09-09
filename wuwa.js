@@ -264,7 +264,7 @@ const teams = {
         {
             name: "Team 1 - [4 Lai]",
 
-            member: [
+            members: [
 
                 {
                     name: "Hiyuki",
