@@ -306,7 +306,7 @@ const teams = {
 
     hiyuki: [
         {
-            name: "Team 1 - [4 Lai]",
+            name: "Team 1 - Basic 123",
 
             members: [
 
@@ -327,7 +327,7 @@ const teams = {
 
             ],
             description:
-                "*** placeholder ***",
+                "Honetly don't use this rot, its stupid",
 
             rotation: [
 
