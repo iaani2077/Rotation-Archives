@@ -198,7 +198,7 @@ const hiyukiTeams = [
             "Lynae: Intro, Lib, Echo, BA (Hold untill full forte), Jump x 3",
             "Hiyuki: Plunge, Skill",
             "Lynae: PLunge, Outro",
-            "Hiyuki: Intro, HA, Lib, BA123, Skill, Skill, BA123, Dash, HA, Lib, Echo, Outro"
+            "Hiyuki: Intro, HA, Lib, BA123, Skill, Skill, BA123, Dash, 3 Iai, HA, Lib, Echo, Outro"
 
 
         ]
