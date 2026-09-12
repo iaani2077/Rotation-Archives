@@ -166,7 +166,7 @@ const hiyukiTeams = [
     },
     {
 
-        name: "4 Iai Lynae Suisui",
+        name: "Lynae Suisui",
 
         members: [
 
