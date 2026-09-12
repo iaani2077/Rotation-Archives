@@ -4,176 +4,17 @@
 
 const charactersData = {
 
-    Havoc: [
+    Havoc: havocCharacters,
 
-        {
-            id: "camellya",
-            name: "Camellya",
-            image: "./characters/camellya.png",
-            description: "Camellya rotations."
-        },
+    Electro: electroCharacters,
 
-        {
-            id: "yyxl",
-            name: "Yangyang: Xuanling",
-            image: "./characters/yyxl.png",
-            description: "Yangyang: Xuanling rotations."
-        }
+    Aero: aeroCharacters,
 
-    ],
+    Glacio: glacioCharacters,
 
-    Electro: [
+    Fusion: fusionCharacters,
 
-        {
-            id: "xly",
-            name: "Xiangli Yao",
-            image: "./characters/xly.png",
-            description: "Xiangli Yao rotations."
-        },
-
-        {
-            id: "augusta",
-            name: "Augusta",
-            image: "./characters/augusta.png",
-            description: "Augusta rotations."
-        },
-
-        {
-            id: "rebecca",
-            name: "Rebecca",
-            image: "./characters/rebecca.png",
-            description: "Rebecca rotations."
-        }
-
-    ],
-
-    Aero: [
-
-        {
-            id: "jiyan",
-            name: "Jiyan",
-            image: "./characters/jiyan.png",
-            description: "Jiyan rotations."
-        },
-
-        {
-            id: "cartethiya",
-            name: "Cartethiya",
-            image: "./characters/cartethiya.png",
-            description: "Cartethiya rotations."
-        },
-
-        {
-            id: "sigrika",
-            name: "Sigrika",
-            image: "./characters/sigrika.png",
-            description: "Sigrika rotations."
-        },
-
-        {
-            id: "qingxiao",
-            name: "Qingxiao",
-            image: "./characters/qingxiao.png",
-            description: "Qingxiao rotations."
-        }
-
-    ],
-
-    Glacio: [
-
-        {
-            id: "carlotta",
-            name: "Carlotta",
-            image: "./characters/carlotta.png",
-            description: "Carlotta rotations."
-        },
-
-        {
-            id: "hiyuki",
-            name: "Hiyuki",
-            image: "./characters/hiyuki.png",
-            description: "Hiyuki rotations."
-        }
-
-    ],
-
-    Fusion: [
-
-        {
-            id: "changli",
-            name: "Changli",
-            image: "./characters/changli.png",
-            description: "Changli rotations."
-        },
-
-        {
-            id: "brant",
-            name: "Brant",
-            image: "./characters/brant.png",
-            description: "Brant rotations."
-        },
-
-        {
-            id: "lupa",
-            name: "Lupa",
-            image: "./characters/lupa.png",
-            description: "Lupa rotations."
-        },
-
-        {
-            id: "galbrena",
-            name: "Galbrena",
-            image: "./characters/galbrena.png",
-            description: "Galbrena rotations."
-        },
-
-        {
-            id: "aemeath",
-            name: "Aemeath",
-            image: "./characters/aemeath.png",
-            description: "Aemeath rotations."
-        },
-
-        {
-            id: "jingran",
-            name: "Jingran",
-            image: "./characters/jingran.png",
-            description: "Jingran rotations."
-        }
-
-    ],
-
-    Spectro: [
-
-        {
-            id: "jinshi",
-            name: "Jinshi",
-            image: "./characters/jinshi.png",
-            description: "Jinshi rotations."
-        },
-
-        {
-            id: "zani",
-            name: "Zani",
-            image: "./characters/zani.png",
-            description: "Zani rotations."
-        },
-
-        {
-            id: "luuk",
-            name: "Luuk",
-            image: "./characters/luuk.png",
-            description: "Luuk rotations."
-        },
-
-        {
-            id: "lucy",
-            name: "Lucy",
-            image: "./characters/lucy.png",
-            description: "Lucy rotations."
-        }
-
-    ]
+    Spectro: spectroCharacters
 
 };
 
@@ -305,14 +146,16 @@ const teams = {
     ],
 
 
-// ***************************** HIYUKI *************************
+    // ***************************** HIYUKI *************************
 
     hiyuki: [
 
         {
+
             name: "4 Lai",
 
             members: [
+
                 {
                     name: "Hiyuki",
                     image: "./characters/hiyuki.png"
@@ -327,6 +170,7 @@ const teams = {
                     name: "Suisui",
                     image: "./characters/suisui.png"
                 }
+
             ],
 
             description: "Use this, atleast.",
@@ -337,23 +181,31 @@ const teams = {
                 "Lucilla: Intro, Skill (Hold until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
                 "Hiyuki: BA123, Dash, BA123, Jump, Skill (Hold), 2 Lai (BA12), TB, BA, Dash, BA123, Jump Skill (Hold), 2 Lai (BAx2), HA, Lib, Echo, Outro"
             ]
+
         },
 
+
         {
+
             name: "3 Lai Quickswap < 25s",
+
             members: [
+
                 {
                     name: "Hiyuki",
                     image: "./characters/hiyuki.png"
                 },
+
                 {
                     name: "Lynae",
                     image: "./characters/lynae.png"
                 },
+
                 {
                     name: "Chisa",
                     image: "./characters/chisa.png"
                 }
+
             ],
 
             description: "This is probably my fav rot. Its hella fun",
@@ -373,11 +225,16 @@ const teams = {
                 "Lynae: BA (Hold untill Full Forte), Jump x 3, BA (Plunge), Outro",
                 "Hiyuki: BA12, Jump, Skill (Hold), 3 Lai (BA123), HA, Lib, Echo, Outro"
             ]
+
         },
+
+
         {
+
             name: "Basic 123",
 
             members: [
+
                 {
                     name: "Hiyuki",
                     image: "./characters/hiyuki.png"
@@ -392,6 +249,7 @@ const teams = {
                     name: "Suisui",
                     image: "./characters/suisui.png"
                 }
+
             ],
 
             description:
@@ -400,15 +258,20 @@ const teams = {
             rotation: [
 
                 "Hiyuki: Skill",
+
                 "Suisui: BA123, Skill, Skill, BA1234, Lib, Echo, Outro",
+
                 "Lucilla: Intro, Skill (Hold Until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
+
                 "Hiyuki: Intro, BA, HA, Lib, Skill x 2, Echo, BA12345, Dash, Skill x 3 (Lai), HA, Lib, Outro"
+
             ]
+
         }
+
     ]
 
 };
-
 
 
 /* =========================
