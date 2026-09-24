@@ -1,6 +1,6 @@
-/* =========================
+/* =========================================================
    CHARACTER DATA
-========================= */
+========================================================= */
 
 const charactersData = {
 
@@ -18,26 +18,12 @@ const charactersData = {
 
 };
 
-
-/* =========================
-   HELPERS
-========================= */
-
-function getAllCharacters() {
-
-    return Object.values(charactersData).flat();
-
-}
+const allCharacters = Object.values(charactersData).flat();
 
 
-function findCharacterById(id) {
-
-    return getAllCharacters().find(
-        character => character.id === id
-    );
-
-}
-
+/* =========================================================
+   TEAM MEMBER COLORS
+========================================================= */
 
 const memberColors = [
     "#00c8ff",
@@ -46,237 +32,26 @@ const memberColors = [
 ];
 
 
-/* =========================
+/* =========================================================
    TEAMS
-========================= */
+========================================================= */
 
 const teams = {
 
-    camellya: [
+    camellya: camellyaTeams,
 
-        {
-            name: "Team 1",
+    yyxl: yyxlTeams,
 
-            members: [
+    hiyuki: hiyukiTeams,
 
-                {
-                    name: "Camellya",
-                    image: "./characters/camellya.png"
-                },
-
-                {
-                    name: "Sanhua",
-                    image: "./characters/sanhua.png"
-                },
-
-                {
-                    name: "Shorekeeper",
-                    image: "./characters/shorekeeper.png"
-                }
-
-            ],
-
-            description:
-                "Assuming sanhua is s6 n SK on concerto weapon",
-
-            rotation: [
-
-                "Camellya: BA, Skill, placeholder",
-
-                "Sanhua: Skill, Lib, HA on Forte",
-
-                "Shorekeeper: BA12, Lib, BA12, Skill, BA, Dash, HA, Outro",
-
-                "Camellya: Intro, Lib, Echo",
-
-                "Sanhua: Skill, Outro",
-
-                "Camellya: (full concerto) Skill, Hold BA (until forte depletes), Echo, Skill, Outro",
-
-                "Sanhua: Intro"
-
-            ]
-
-        }
-
-    ],
-
-
-    yyxl: [
-
-        {
-
-            name: "Team 1 - [Basic 123]",
-
-            members: [
-
-                {
-                    name: "Yangyang XL",
-                    image: "./characters/yyxl.png"
-                },
-
-                {
-                    name: "Chisa",
-                    image: "./characters/chisa.png"
-                },
-
-                {
-                    name: "Suisui",
-                    image: "./characters/suisui.png"
-                }
-
-            ],
-
-            description: "**placeholder**",
-
-            rotation: [
-
-                "Yangyang XL: placeholder, placeholder",
-
-                "Suisui: placeholder",
-
-                "Chisa: placeholder, BA",
-
-                "Yangyang XL: Intro"
-
-            ]
-
-        }
-
-    ],
-
-
-    // ***************************** HIYUKI *************************
-
-    hiyuki: [
-
-        {
-
-            name: "4 Lai",
-
-            members: [
-
-                {
-                    name: "Hiyuki",
-                    image: "./characters/hiyuki.png"
-                },
-
-                {
-                    name: "Lucilla",
-                    image: "./characters/lucilla.png"
-                },
-
-                {
-                    name: "Suisui",
-                    image: "./characters/suisui.png"
-                }
-
-            ],
-
-            description: "Use this, atleast.",
-
-            rotation: [
-                "Hiyuki: Skill",
-                "Suisui: BA123, Skill, Skill, BA1234, Lib, Echo, Outro",
-                "Lucilla: Intro, Skill (Hold until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
-                "Hiyuki: BA123, Dash, BA123, Jump, Skill (Hold), 2 Lai (BA12), TB, BA, Dash, BA123, Jump Skill (Hold), 2 Lai (BAx2), HA, Lib, Echo, Outro"
-            ]
-
-        },
-
-
-        {
-
-            name: "3 Lai Quickswap < 25s",
-
-            members: [
-
-                {
-                    name: "Hiyuki",
-                    image: "./characters/hiyuki.png"
-                },
-
-                {
-                    name: "Lynae",
-                    image: "./characters/lynae.png"
-                },
-
-                {
-                    name: "Chisa",
-                    image: "./characters/chisa.png"
-                }
-
-            ],
-
-            description: "This is probably my fav rot. Its hella fun",
-
-            rotation: [
-                "Chisa: Skill, BA12",
-                "Lynae: Skill",
-                "Hiyuki: BA12, Dash",
-                "Chisa: BA",
-                "Lynae: Lib",
-                "Hiyuki: BA12, Skill",
-                "Chisa: BA, Lib, Skill(Enhanced)",
-                "Hiyuki: BA, HA, Lib, BA123",
-                "Chisa: BA12",
-                "Hiyuki: BA12, Skill",
-                "Chisa: BA, Outro",
-                "Lynae: BA (Hold untill Full Forte), Jump x 3, BA (Plunge), Outro",
-                "Hiyuki: BA12, Jump, Skill (Hold), 3 Lai (BA123), HA, Lib, Echo, Outro"
-            ]
-
-        },
-
-
-        {
-
-            name: "Basic 123",
-
-            members: [
-
-                {
-                    name: "Hiyuki",
-                    image: "./characters/hiyuki.png"
-                },
-
-                {
-                    name: "Lucilla",
-                    image: "./characters/lucilla.png"
-                },
-
-                {
-                    name: "Suisui",
-                    image: "./characters/suisui.png"
-                }
-
-            ],
-
-            description:
-                "Honetly don't use this rot, its stupid.",
-
-            rotation: [
-
-                "Hiyuki: Skill",
-
-                "Suisui: BA123, Skill, Skill, BA1234, Lib, Echo, Outro",
-
-                "Lucilla: Intro, Skill (Hold Until Yellow Circle), Lib, BA (HOLD), Echo, Outro",
-
-                "Hiyuki: Intro, BA, HA, Lib, Skill x 2, Echo, BA12345, Dash, Skill x 3 (Lai), HA, Lib, Outro"
-
-            ]
-
-        }
-
-    ]
+    augusta: augustaTeams
 
 };
 
 
-/* =========================
-   DOM
-========================= */
+/* =========================================================
+   DOM ELEMENTS
+========================================================= */
 
 const filters =
     document.querySelectorAll(".attribute-filter");
@@ -299,19 +74,48 @@ const teamsContainer =
 const header =
     document.querySelector("header");
 
+const releaseSort =
+    document.getElementById("releaseSort");
 
-/* =========================
-   CHARACTER DISPLAY
-========================= */
+
+/* =========================================================
+   RELEASE SORT
+========================================================= */
+
+let oldestFirst = true;
+
+
+/* =========================================================
+   DISPLAY CHARACTERS
+========================================================= */
 
 function displayCharacters(attribute = "all") {
 
     characterGrid.innerHTML = "";
 
-    const characters =
-        attribute === "all"
-            ? getAllCharacters()
-            : charactersData[attribute] || [];
+    let characters;
+
+    if (attribute === "all") {
+
+        characters = allCharacters;
+
+    } else {
+
+        characters = charactersData[attribute] || [];
+
+    }
+
+
+    characters = [...characters].sort((a, b) => {
+
+        const dateA = new Date(a.releaseDate);
+        const dateB = new Date(b.releaseDate);
+
+        return oldestFirst
+            ? dateA - dateB
+            : dateB - dateA;
+
+    });
 
 
     characters.forEach(character => {
@@ -324,17 +128,15 @@ function displayCharacters(attribute = "all") {
 
 
         card.innerHTML = `
+            <img
+                src="${character.image}"
+                alt="${character.name}"
+            >
 
-                <img
-                    src="${character.image}"
-                    alt="${character.name}"
-                >
-
-                <span>
-                    ${character.name}
-                </span>
-
-            `;
+            <span>
+                ${character.name}
+            </span>
+        `;
 
 
         card.addEventListener("click", () => {
@@ -351,21 +153,19 @@ function displayCharacters(attribute = "all") {
 }
 
 
-/* =========================
+/* =========================================================
    ATTRIBUTE FILTERS
-========================= */
+========================================================= */
 
 filters.forEach(filter => {
 
     filter.addEventListener("click", () => {
 
-        const attribute =
-            filter.dataset.attribute;
+        filters.forEach(button => {
 
+            button.classList.remove("active");
 
-        filters.forEach(item =>
-            item.classList.remove("active")
-        );
+        });
 
 
         filter.classList.add("active");
@@ -377,6 +177,19 @@ filters.forEach(filter => {
         characterGrid.style.display =
             "grid";
 
+        releaseSort.style.display =
+            "";
+
+
+        const attribute =
+            filter.dataset.attribute;
+
+
+        oldestFirst = true;
+
+        releaseSort.textContent =
+            "Oldest → Newest";
+
 
         displayCharacters(attribute);
 
@@ -385,20 +198,56 @@ filters.forEach(filter => {
 });
 
 
-/* =========================
-   CHARACTER PAGE
-========================= */
+/* =========================================================
+   RELEASE SORT
+========================================================= */
+
+releaseSort.addEventListener("click", () => {
+
+    oldestFirst = !oldestFirst;
+
+
+    releaseSort.textContent = oldestFirst
+        ? "Oldest → Newest"
+        : "Newest → Oldest";
+
+
+    const activeFilter =
+        document.querySelector(
+            ".attribute-filter.active"
+        );
+
+
+    const attribute =
+        activeFilter
+            ? activeFilter.dataset.attribute
+            : "all";
+
+
+    displayCharacters(attribute);
+
+});
+
+
+/* =========================================================
+   SHOW CHARACTER
+========================================================= */
 
 function showCharacter(id) {
 
     const character =
-        findCharacterById(id);
+        allCharacters.find(
+            character => character.id === id
+        );
 
 
     if (!character) return;
 
 
     characterGrid.style.display =
+        "none";
+
+    releaseSort.style.display =
         "none";
 
     characterContent.style.display =
@@ -408,9 +257,8 @@ function showCharacter(id) {
     characterName.textContent =
         character.name;
 
-
     characterDescription.textContent =
-        character.description;
+        character.description || "";
 
 
     displayTeams(id);
@@ -418,23 +266,149 @@ function showCharacter(id) {
 }
 
 
-/* =========================
-   TEAM DISPLAY
-========================= */
+/* =========================================================
+   RENDER ROTATION
+========================================================= */
+
+function renderRotation(rotationSteps, team) {
+
+    let html = "";
+
+    let lastCharacter = null;
+
+
+    rotationSteps.forEach(rotationStep => {
+
+        /*
+         * Rotation format:
+         *
+         * "Hiyuki: Intro, BA, HA, Lib"
+         */
+
+        const [characterName, ...actionParts] =
+            rotationStep.split(":");
+
+
+        const character =
+            characterName.trim();
+
+
+        const actionsText =
+            actionParts.join(":").trim();
+
+
+        if (!actionsText) return;
+
+
+        const actions =
+            actionsText
+                .split(",")
+                .map(action => action.trim())
+                .filter(Boolean);
+
+
+        const memberIndex =
+            team.members.findIndex(
+                member =>
+                    member.name === character
+            );
+
+
+        const member =
+            team.members[memberIndex];
+
+
+        const characterColor =
+            memberColors[memberIndex] || "#ffffff";
+
+
+        actions.forEach(action => {
+
+            /*
+             * Show character image only
+             * when the character changes.
+             */
+
+            if (
+                character !== lastCharacter &&
+                member
+            ) {
+
+                html += `
+                    <div
+                        class="rotation-character"
+                        style="--character-color: ${characterColor}"
+                    >
+                        <img
+                            src="${member.image}"
+                            alt="${character}"
+                        >
+                    </div>
+                `;
+
+
+                lastCharacter =
+                    character;
+
+            }
+
+
+            /*
+             * Highlight anything inside:
+             *
+             * [[text]]
+             */
+
+            const formattedAction =
+                action.replace(
+                    /\[\[(.*?)\]\]/g,
+                    '<span class="rotation-highlight">$1</span>'
+                );
+
+
+            html += `
+                <span
+                    class="rotation-step"
+                    style="--character-color: ${characterColor}"
+                >
+                    ${formattedAction}
+                </span>
+
+                <span class="rotation-arrow">
+                    →
+                </span>
+            `;
+
+        });
+
+    });
+
+
+    return html;
+
+}
+
+
+/* =========================================================
+   DISPLAY TEAMS
+========================================================= */
 
 function displayTeams(characterId) {
-
-    teamsContainer.innerHTML = "";
-
 
     const characterTeams =
         teams[characterId] || [];
 
 
+    teamsContainer.innerHTML = "";
+
+
     if (!characterTeams.length) {
 
-        teamsContainer.innerHTML =
-            "<p>No teams have been added yet.</p>";
+        teamsContainer.innerHTML = `
+            <p class="team-description">
+                No teams available yet.
+            </p>
+        `;
 
         return;
 
@@ -446,388 +420,348 @@ function displayTeams(characterId) {
         const teamCard =
             document.createElement("div");
 
-
         teamCard.className =
             "team-card";
 
 
+        /* -------------------------------------------------
+           TEAM INFO
+        ------------------------------------------------- */
+
         const teamInfo =
             document.createElement("div");
-
 
         teamInfo.className =
             "team-info";
 
 
-        teamInfo.innerHTML = `
+        /* -------------------------------------------------
+           TEAM TITLE
+        ------------------------------------------------- */
 
-                <h3>
-                    ${team.name}
-                </h3>
+        const teamTitle =
+            document.createElement("h3");
 
-                <div class="team-members"></div>
+        teamTitle.textContent =
+            team.name;
 
-                <p class="team-description">
-                    ${team.description}
-                </p>
 
-            `;
-
+        /* -------------------------------------------------
+           TEAM MEMBERS
+        ------------------------------------------------- */
 
         const teamMembers =
-            teamInfo.querySelector(".team-members");
+            document.createElement("div");
+
+        teamMembers.className =
+            "team-members";
 
 
         team.members.forEach((member, index) => {
 
-            const memberDiv =
+            const memberCard =
                 document.createElement("div");
 
-
-            memberDiv.className =
+            memberCard.className =
                 `team-member member-${index + 1}`;
 
 
-            memberDiv.innerHTML = `
+            memberCard.innerHTML = `
+                <div class="member-color"></div>
 
-                    <img
-                        src="${member.image}"
-                        alt="${member.name}"
-                    >
+                <img
+                    src="${member.image}"
+                    alt="${member.name}"
+                >
 
-                    <span>
-                        ${member.name}
-                    </span>
+                <span>
+                    ${member.name}
+                </span>
+            `;
 
-                `;
 
-
-            teamMembers.appendChild(memberDiv);
+            teamMembers.appendChild(
+                memberCard
+            );
 
         });
 
 
-        /* =========================
-           ROTATION
-        ========================= */
+        /* -------------------------------------------------
+           TEAM DESCRIPTION
+        ------------------------------------------------- */
 
-        const rotation =
-            document.createElement("div");
+        const teamDescription =
+            document.createElement("p");
 
-
-        rotation.className =
-            "team-rotation";
+        teamDescription.className =
+            "team-description";
 
 
         /*
-            Convert:
+         * innerHTML allows links and other
+         * custom HTML inside descriptions.
+         */
 
-            "Camellya: BA, Skill"
-
-            into:
-
-            "Camellya: BA"
-            "Camellya: Skill"
-
-            before generating the HTML.
-        */
-
-        const expandedRotation = [];
+        teamDescription.innerHTML =
+            team.description || "";
 
 
-        team.rotation.forEach(rotationStep => {
+        /* -------------------------------------------------
+           BUILD TEAM INFO
+        ------------------------------------------------- */
 
-            const separator =
-                rotationStep.indexOf(":");
+        teamInfo.appendChild(
+            teamTitle
+        );
+
+        teamInfo.appendChild(
+            teamMembers
+        );
+
+        teamInfo.appendChild(
+            teamDescription
+        );
+
+        teamCard.appendChild(
+            teamInfo
+        );
 
 
-            /*
-                No ":" means this is just
-                a normal standalone step.
-            */
+        /* -------------------------------------------------
+           TEAM ROTATION
+        ------------------------------------------------- */
 
-            if (separator === -1) {
+        if (team.rotation) {
 
-                expandedRotation.push(
-                    rotationStep
+            const rotationContainer =
+                document.createElement("div");
+
+            rotationContainer.className =
+                "team-rotation";
+
+
+            /* OPENER */
+
+            if (
+                team.rotation.opener &&
+                team.rotation.opener.length
+            ) {
+
+                const opener =
+                    document.createElement("div");
+
+                opener.className =
+                    "rotation-section";
+
+
+                opener.innerHTML = `
+                    <h4 class="rotation-title">
+                        Opener
+                    </h4>
+
+                    <div class="rotation-line">
+                        ${renderRotation(
+                    team.rotation.opener,
+                    team
+                )}
+                    </div>
+                `;
+
+
+                rotationContainer.appendChild(
+                    opener
                 );
-
-                return;
 
             }
 
 
-            const character =
-                rotationStep
-                    .slice(0, separator)
-                    .trim();
+            /* LOOP */
+
+            if (
+                team.rotation.loop &&
+                team.rotation.loop.length
+            ) {
+
+                const loop =
+                    document.createElement("div");
+
+                loop.className =
+                    "rotation-section";
 
 
-            const actions =
-                rotationStep
-                    .slice(separator + 1)
-                    .split(",");
+                loop.innerHTML = `
+                    <h4 class="rotation-title">
+                        Loop
+                    </h4>
+
+                    <div class="rotation-line">
+                        ${renderRotation(
+                    team.rotation.loop,
+                    team
+                )}
+                    </div>
+                `;
 
 
-            actions.forEach(action => {
+                rotationContainer.appendChild(
+                    loop
+                );
 
-                const cleanAction =
-                    action.trim();
-
-
-                if (cleanAction) {
-
-                    expandedRotation.push(
-                        `${character}: ${cleanAction}`
-                    );
-
-                }
-
-            });
-
-        });
+            }
 
 
-        /*
-            Generate rotation HTML.
-        */
-
-        const rotationHTML =
-            expandedRotation.map(rotationStep => {
-
-                const separator =
-                    rotationStep.indexOf(":");
-
-
-                if (separator === -1) {
-
-                    return `
-                            <span class="rotation-step">
-                                ${rotationStep}
-                            </span>
-                        `;
-
-                }
-
-
-                const character =
-                    rotationStep
-                        .slice(0, separator)
-                        .trim();
-
-
-                const action =
-                    rotationStep
-                        .slice(separator + 1)
-                        .trim();
-
-
-                const memberIndex =
-                    team.members.findIndex(
-                        member =>
-                            member.name === character
-                    );
-
-
-                const color =
-                    memberColors[memberIndex]
-                    || "#d5d8de";
-
-
-                return `
-
-                        <span
-                            class="rotation-step"
-                            style="--character-color: ${color}"
-                            title="${character}"
-                        >
-                            ${action}
-                        </span>
-
-                    `;
-
-            }).join(
-                '<span class="rotation-arrow">→</span>'
+            teamCard.appendChild(
+                rotationContainer
             );
 
-
-        rotation.innerHTML = `
-
-                <h4>
-                    Team Rotation
-                </h4>
-
-                <div class="rotation-line">
-                    ${rotationHTML}
-                </div>
-
-            `;
+        }
 
 
-        teamCard.appendChild(teamInfo);
-
-        teamCard.appendChild(rotation);
-
-        teamsContainer.appendChild(teamCard);
+        teamsContainer.appendChild(
+            teamCard
+        );
 
     });
 
 }
 
 
-/* =========================
-   DROPDOWNS
-========================= */
+/* =========================================================
+   NOTES DROPDOWN
+========================================================= */
 
 const notesButton =
-    document.getElementById("notesButton");
+    document.querySelector(".nav-button");
 
 const notesPanel =
-    document.getElementById("notesPanel");
+    document.querySelector(".dropdown");
 
 const notesItem =
-    document.getElementById("notesItem");
-
-
-const creditsButton =
-    document.getElementById("creditsButton");
-
-const creditsPanel =
-    document.getElementById("creditsPanel");
-
-const creditsItem =
-    document.getElementById("creditsItem");
+    document.querySelector(".nav-item");
 
 
 function closeDropdowns() {
 
-    notesPanel.classList.remove("show");
+    notesPanel.classList.remove(
+        "show"
+    );
 
-    creditsPanel.classList.remove("show");
-
-    notesItem.classList.remove("active");
-
-    creditsItem.classList.remove("active");
+    notesButton.classList.remove(
+        "active"
+    );
 
 }
 
 
-notesButton.addEventListener("click", event => {
+notesButton.addEventListener(
+    "click",
+    event => {
 
-    event.stopPropagation();
-
-
-    const isOpen =
-        notesPanel.classList.contains("show");
+        event.stopPropagation();
 
 
-    closeDropdowns();
+        notesPanel.classList.toggle(
+            "show"
+        );
 
 
-    if (!isOpen) {
-
-        notesPanel.classList.add("show");
-
-        notesItem.classList.add("active");
-
-    }
-
-});
-
-
-creditsButton.addEventListener("click", event => {
-
-    event.stopPropagation();
-
-
-    const isOpen =
-        creditsPanel.classList.contains("show");
-
-
-    closeDropdowns();
-
-
-    if (!isOpen) {
-
-        creditsPanel.classList.add("show");
-
-        creditsItem.classList.add("active");
+        notesButton.classList.toggle(
+            "active",
+            notesPanel.classList.contains(
+                "show"
+            )
+        );
 
     }
+);
 
-});
 
+document.addEventListener(
+    "click",
+    event => {
 
-document.addEventListener("click", event => {
+        if (
+            !notesItem.contains(
+                event.target
+            )
+        ) {
 
-    if (
-        !notesItem.contains(event.target) &&
-        !creditsItem.contains(event.target)
-    ) {
+            closeDropdowns();
 
-        closeDropdowns();
+        }
 
     }
+);
 
-});
 
-
-/* =========================
+/* =========================================================
    NAVBAR SCROLL
-========================= */
+========================================================= */
 
 let lastScrollY =
     window.scrollY;
 
-
-window.addEventListener("scroll", () => {
-
-    const currentScrollY =
-        window.scrollY;
+let scrollTimeout;
 
 
-    if (
-        currentScrollY > lastScrollY &&
-        currentScrollY > 60
-    ) {
+window.addEventListener(
+    "scroll",
+    () => {
 
-        header.classList.add("hide");
-
-    } else {
-
-        header.classList.remove("hide");
-
-    }
+        const currentScrollY =
+            window.scrollY;
 
 
-    header.classList.add(
-        "scroll-dim"
-    );
+        if (
+            currentScrollY > lastScrollY &&
+            currentScrollY > 60
+        ) {
 
-
-    clearTimeout(
-        window.scrollTimeout
-    );
-
-
-    window.scrollTimeout =
-        setTimeout(() => {
-
-            header.classList.remove(
-                "scroll-dim"
+            header.classList.add(
+                "hide"
             );
 
-        }, 300);
+        } else {
+
+            header.classList.remove(
+                "hide"
+            );
+
+        }
 
 
-    lastScrollY =
-        currentScrollY;
+        header.classList.add(
+            "scroll-dim"
+        );
 
-});
+
+        clearTimeout(
+            scrollTimeout
+        );
 
 
-/* =========================
+        scrollTimeout = setTimeout(
+            () => {
+
+                header.classList.remove(
+                    "scroll-dim"
+                );
+
+            },
+            300
+        );
+
+
+        lastScrollY =
+            currentScrollY;
+
+    }
+);
+
+
+/* =========================================================
    INITIAL LOAD
-========================= */
+========================================================= */
 
 displayCharacters();

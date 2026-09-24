@@ -10,13 +10,13 @@ const augustaTeams = [
         members: [
 
             {
-                name: "Camellya",
-                image: "./characters/camellya.png"
+                name: "Augusta",
+                image: "./characters/augusta.png"
             },
 
             {
-                name: "Sanhua",
-                image: "./characters/sanhua.png"
+                name: "Iuno",
+                image: "./characters/iuno.png"
             },
 
             {
@@ -27,23 +27,21 @@ const augustaTeams = [
         ],
 
         description:
-            "Assuming sanhua is s6 n SK on concerto weapon",
+            "placeholder",
 
         rotation: [
 
-            "Camellya: BA, Skill, placeholder",
+            "Augusta: Skill",
+            
+            "Shorekeeper: BA123, Skill",
+            
+            "Augusta: HA, BA",
+            
+            "Shorekeeper: BA12, HA, Dash, BA123, HA, Echo, Lib, Outro",
 
-            "Sanhua: Skill, Lib, HA on Forte",
+            "Iuno: Echo, Lib, Jump, Dash, BA123, Skill, Dash, BA, Skill, HA (Full Concerto), Outro",
 
-            "Shorekeeper: BA12, Lib, BA12, Skill, BA, Dash, HA, Outro",
-
-            "Camellya: Intro, Lib, Echo",
-
-            "Sanhua: Skill, Outro",
-
-            "Camellya: (full concerto) Skill, Hold BA (until forte depletes), Echo, Skill, Outro",
-
-            "Sanhua: Intro"
+            "Augusta: Intro, HA, BA, Lib, Skill, HA, BA, HA, Echo, HA, BA, Enhanced Skill x 3, Lib, BA X 9, HA, TB, HA, BA, Outro"
 
         ]
 

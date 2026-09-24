@@ -1,0 +1,283 @@
+ css
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0f1117;
+
+    color: white;
+
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.changelog-page {
+
+    min-height: 100vh;
+
+    width: min(650px, 90%);
+
+    margin: auto;
+
+    padding: 30px 0 50px;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.changelog-header {
+
+    margin-bottom: 20px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #777e8c;
+
+    text-decoration: none;
+
+    font-size: 0.65rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: color 0.2s ease;
+
+}
+
+
+.back-button:hover {
+
+    color: #00c8ff;
+
+}
+
+
+/* =========================
+   PAGE LABEL
+========================= */
+
+.page-label {
+
+    margin-bottom: 5px;
+
+    color: #00c8ff;
+
+    font-size: 0.55rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.changelog-header h1 {
+
+    font-size: 2.2rem;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.page-description {
+
+    margin-top: 8px;
+
+    color: #6f7582;
+
+    font-size: 0.7rem;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================
+   CHANGELOG LIST
+========================= */
+
+.changelog-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+/* =========================
+   CHANGELOG ENTRY
+========================= */
+
+.changelog-entry {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-height: 42px;
+
+    padding: 9px 12px;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    border-left: 2px solid
+        rgba(0, 200, 255, 0.3);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.changelog-entry:hover {
+
+    background: rgba(0, 200, 255, 0.04);
+
+    border-left-color: #00c8ff;
+
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.entry-date {
+
+    flex-shrink: 0;
+
+    width: 90px;
+
+    color: #00c8ff;
+
+    font-size: 0.58rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.entry-text {
+
+    color: #aeb3bd;
+
+    font-size: 0.7rem;
+
+    line-height: 1.3;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .changelog-page {
+
+        width: 90%;
+
+        padding-top: 25px;
+
+    }
+
+
+    .changelog-header {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .changelog-header h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .changelog-entry {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 3px;
+
+        padding: 8px 10px;
+
+    }
+
+
+    .entry-date {
+
+        width: auto;
+
+    }
+
+}
+ 
