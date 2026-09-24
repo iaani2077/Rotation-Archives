@@ -17,7 +17,7 @@ const hiyukiTeams = [
             }
         ],
 
-        description: 'Assuming S6 Sanhua. <a href="https://example.com" target="_blank" rel="noopener noreferrer">Sanhua Build ↗</a>',
+        description: 'placeholder <a href="https://example.com" target="_blank" rel="noopener noreferrer">Sanhua Build ↗</a>',
 
         rotation: {
 
