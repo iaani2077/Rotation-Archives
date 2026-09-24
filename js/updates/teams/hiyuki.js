@@ -17,7 +17,8 @@ const hiyukiTeams = [
             }
         ],
 
-        description: 'placeholder <a href="https://example.com" target="_blank" rel="noopener noreferrer">placeholder↗</a>',
+        // description: 'placeholder <a href="https://example.com" target="_blank" rel="noopener noreferrer">placeholder↗</a>',
+        description: "placeholder",
 
         rotation: {
 
